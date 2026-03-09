@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-slate-850: #151e2e;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100 font-sans antialiased selection:bg-blue-500/30;
+  }
+}

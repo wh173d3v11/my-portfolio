@@ -4,6 +4,7 @@ export default function POCs() {
   const pocs = [
     {
       title: 'Offline-First MQTT Architecture',
+      year: '2026',
       description: 'Developed a React Native proof of concept demonstrating offline-first capabilities. Engineered a local MQTT broker on-device to facilitate seamless inter-device communication and real-time data sharing completely independent of external internet connectivity.',
       tags: ['React Native', 'MQTT', 'Offline-First', 'P2P Sync'],
       icon: <Network className="w-6 h-6 text-cyan-400" />,
@@ -11,6 +12,7 @@ export default function POCs() {
     },
     {
       title: 'Semantic Medical Search via ObjectBox Vector DB',
+      year: '2025',
       description: 'Embedded Semantic Search operating entirely client-side. Converted Excel medical records into MDB. Utilized MLKit OCR to scan tablet names, extracting vectors via Google Colab and 12b sentence models. Deployed onto mobile with ONNX bindings and ObjectBox for high-speed logistics tracking.',
       tags: ['ObjectBox', 'Vector DB', 'MLKit OCR', 'ONNX', 'Semantic Search'],
       icon: <Database className="w-6 h-6 text-amber-400" />,
@@ -18,13 +20,16 @@ export default function POCs() {
     },
     {
       title: 'KMP/CMP Technician Chatbot',
+      year: '2025',
       description: 'A cross-platform technician assistant bridging complex native pipelines into a unified view. Used a custom native Scanflow OCR engine on the Android/iOS edges to scan documents, passing data seamlessly to the KMP/CMP shared UI logic for interaction with a custom backend AI chatbot.',
       tags: ['Kotlin Multiplatform', 'Compose Multiplatform', 'Native OCR', 'AI Chatbot'],
       icon: <Smartphone className="w-6 h-6 text-blue-400" />,
-      color: 'from-blue-500/20 to-indigo-500/20'
+      color: 'from-blue-500/20 to-indigo-500/20',
+      youtubeId: 'WQiSooUnji8'
     },
     {
       title: 'Retail Barcode Self-Checkout',
+      year: '2023',
       description: 'Streamlining Shopping: The Future of Retail with Barcode Self-Checkout. High-speed product scanning system built to accelerate the retail experience utilizing edge-based vision architecture.',
       tags: ['Retail', 'Barcode Scanning', 'Edge Vision'],
       icon: <ScanBarcode className="w-6 h-6 text-purple-400" />,
@@ -33,6 +38,7 @@ export default function POCs() {
     },
     {
       title: 'AR Indoor Navigation',
+      year: '2022',
       description: 'Proof of concept leveraging Google ARCloud Anchors and ArCore/Sceneview to securely map and navigate complex indoor environments.',
       tags: ['ARCore', 'Sceneview', 'ARCloud'],
       icon: <Navigation className="w-6 h-6 text-pink-400" />,
@@ -65,7 +71,10 @@ export default function POCs() {
                 </div>
 
                 <div className="flex-grow">
-                  <h3 className="text-2xl font-bold text-slate-100 mb-4">{poc.title}</h3>
+                  <div className="flex items-center justify-between gap-4 mb-4">
+                    <h3 className="text-2xl font-bold text-slate-100">{poc.title}</h3>
+                    <span className="text-sm font-medium text-slate-400 bg-slate-800/50 border border-slate-700/50 px-3 py-1 rounded-full whitespace-nowrap">{poc.year}</span>
+                  </div>
                   <p className="text-slate-400 mb-6 leading-relaxed">
                     {poc.description}
                   </p>

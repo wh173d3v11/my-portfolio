@@ -4,6 +4,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import POCs from './components/POCs';
 import Courses from './components/Courses';
+import CertificationsAndAwards from './components/CertificationsAndAwards';
 import OpenSource from './components/OpenSource';
 import Contact from './components/Contact';
 
@@ -22,6 +23,7 @@ function App() {
             <a href="#experience" className="hover:text-white transition-colors">Experience</a>
             <a href="#projects" className="hover:text-white transition-colors">Projects</a>
             <a href="#pocs" className="hover:text-white transition-colors">R&D / POCs</a>
+            <a href="#certifications" className="hover:text-white transition-colors">Awards</a>
             <a href="#courses" className="hover:text-white transition-colors">Courses</a>
             <a href="#opensource" className="hover:text-white transition-colors">Open Source</a>
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
@@ -34,6 +36,7 @@ function App() {
         <SkillsMatrix />
         <Experience />
         <Projects />
+        <CertificationsAndAwards />
         <POCs />
         <Courses />
         <OpenSource />
